@@ -2,13 +2,122 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap');
 
 html,
 body {
     font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* {
-    font-family: inherit;
+/* Utility classes */
+.flex {
+    display: flex;
 }
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+    /* 24px */
+}
+
+.gap-10 {
+    gap: 2.5rem;
+    /* 40px */
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    /* 36px */
+    line-height: 2.5rem;
+    /* 40px */
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.leading-9 {
+    line-height: 2.25rem;
+    /* 36px */
+}
+
+.bg-red-600\/25 {
+    background-color: rgba(220, 38, 38, 0.25);
+    /* Tailwind's red-600 at 25% opacity */
+}
+
+.text-red-600 {
+    color: #dc2626;
+    /* Tailwind's red-600 */
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+    /* 8px */
+}
+
+.px-8 {
+    padding-left: 2rem;
+    /* 32px */
+    padding-right: 2rem;
+    /* 32px */
+}
+
+.h-16 {
+    height: 4rem;
+    /* 64px */
+}
+
+.w-full {
+    width: 100%;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+/* Specific font styles for components */
+.font-gilroy {
+    font-family: 'Gilroy', sans-serif;
+}
+
+.font-ibm-plex-mono {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+.letter-spacing-neg-6 {
+    letter-spacing: -0.06em; /* -6% letter spacing */
+  }
