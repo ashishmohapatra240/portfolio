@@ -46,12 +46,13 @@ const NavBar: React.FC = () => {
           ))}
         </div>
         <div className="md:hidden flex items-center gap-8 relative">
-          
           <Link
             href={menuItems.find((item) => item.name === active)?.path || "/"}
             passHref
           >
-            <div className={`text-black text-2xl font-bold leading-9 tracking-tightest`}>
+            <div
+              className={`text-black text-2xl font-bold leading-9 tracking-tightest`}
+            >
               {active}
             </div>
           </Link>
