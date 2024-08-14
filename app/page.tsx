@@ -1,5 +1,6 @@
-import HeroText from "./components/HeroText";
-import NavBar from "./components/NavBar";
+import HeroImage from "./components/HeroImage/HeroImage";
+import HeroText from "./components/HeroText/HeroText";
+import NavBar from "./components/Navbar/NavBar";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <div className="mx-10 my-10">
         <HeroText />
       </div>
+      <HeroImage/>
     </>
   );
 }
