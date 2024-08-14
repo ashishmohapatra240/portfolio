@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroImage: React.FC = () => {
   return (
-    <div style={{ width: "100%", minHeight: "50vh" }}>
+    <div className="w-full">
       <Image
         src="/images/heroImage.png"
         alt="Hero Image"
@@ -10,6 +10,7 @@ const HeroImage: React.FC = () => {
         width={16}
         height={9}
         objectFit="cover"
+        className="block"
       />
     </div>
   );
