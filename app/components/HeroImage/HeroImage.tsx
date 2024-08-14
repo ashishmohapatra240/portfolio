@@ -2,15 +2,14 @@ import Image from "next/image";
 
 const HeroImage: React.FC = () => {
   return (
-    <div className="w-full">
+    <div className="relative w-full h-[192px] md:h-[280px]">
       <Image
         src="/images/heroImage.png"
         alt="Hero Image"
-        layout="responsive"
-        width={16}
-        height={9}
+        layout="fill"
         objectFit="cover"
-        className="block"
+        priority
+        className="absolute inset-0"
       />
     </div>
   );
