@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import HeroImage from "./components/HeroImage/HeroImage";
 import HeroText from "./components/HeroText/HeroText";
 import NavBar from "./components/Navbar/NavBar";
+import Skill from "./components/Skills/Skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </div>
       <HeroImage />
       <BottomHero />
+      <Skill/>
       <Footer />
     </>
   );
