@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import HeroImage from "./components/HeroImage/HeroImage";
 import HeroText from "./components/HeroText/HeroText";
 import NavBar from "./components/Navbar/NavBar";
+import Playground from "./components/Playground/Playground";
 import Skill from "./components/Skills/Skills";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <BottomHero />
       <Skill/>
       <Experience/>
+      <Playground/>
       <Footer />
     </>
   );
