@@ -50,7 +50,6 @@ const Skill = () => {
         </div>
       ))}
       <hr className="border-t border-[#BABABA] w-full my-8 md:my-10" />
-
     </div>
   );
 };

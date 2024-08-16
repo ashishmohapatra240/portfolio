@@ -1,4 +1,5 @@
 import BottomHero from "./components/BottomHero/BottomHero";
+import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
 import HeroImage from "./components/HeroImage/HeroImage";
 import HeroText from "./components/HeroText/HeroText";
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroImage />
       <BottomHero />
       <Skill/>
+      <Experience/>
       <Footer />
     </>
   );
