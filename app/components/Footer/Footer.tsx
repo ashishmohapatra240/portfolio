@@ -30,8 +30,8 @@ const SocialLink: React.FC<SocialLinkProps> = ({ name, url }) => (
 
 const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-black py-12">
-      <div className="container mx-10">
+    <footer className="w-full bg-black py-12 relative">
+      <div className="container mx-auto px-4 md:px-10">
         <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center flex-wrap">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <ConnectText />
@@ -59,10 +59,9 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="w-full text-left mt-8 md:mt-12 text-white text-lg font-normal leading-9 tracking-tightest md:order-3 order-1">
+        <div className="w-full text-left mt-8 md:mt-12 text-white text-lg font-normal leading-9 tracking-tightest">
           © Ashish Mohapatra, 2024
         </div>
-        <div className="absolute top-[140px] right-[40px] w-5 h-5 bg-white rounded-full"></div>
       </div>
     </footer>
   );
