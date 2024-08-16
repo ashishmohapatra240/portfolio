@@ -25,7 +25,7 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className="w-full px-4 md:px-10 py-8 flex flex-col gap-5 mt-10">
+    <div className="w-full px-4 md:px-10 flex flex-col gap-5 mt-10">
       <div className="flex items-center">
         <span className="text-black text-2xl md:text-2xl font-normal tracking-tightest">
           what I

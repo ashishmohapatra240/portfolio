@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BottomHero = () => {
   return (
-    <div className="w-full px-4 md:px-10 py-8">
+    <div className="w-full px-4 md:px-10 py-4">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
         <div className="w-full max-w-2xl">
           <p className="text-black text-3xl font-normal leading-tight tracking-tightest">
