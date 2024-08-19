@@ -31,10 +31,10 @@ const WorkCard: React.FC<WorkCardProps> = ({ image, title, link }) => {
         />
       </div>
       <div className="flex  items-center bg-white bg-opacity-80 py-2">
-        <div className="text-xl md:text-3xl tracking-tightest">
+        <div className="text-3xl md:text-3xl tracking-tightest">
           {title}
         </div>
-        <span className="ml-2 text-xl md:text-3xl transition-transform duration-300 group-hover:translate-x-1">
+        <span className="ml-2 text-3xl md:text-3xl transition-transform duration-300 group-hover:translate-x-1">
           &#8594;
         </span>
       </div>
