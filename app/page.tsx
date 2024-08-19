@@ -11,17 +11,15 @@ import Skill from "./components/Skills/Skills";
 export default function Home() {
   return (
     <>
-      <NavBar />
       <div className="px-4 md:px-10 py-8">
         <HeroText />
       </div>
       <HeroImage />
       <BottomHero />
-      <Skill/>
-      <Experience/>
-      <Playground/>
-      <Motto/>
-      <Footer />
+      <Skill />
+      <Experience />
+      <Playground />
+      <Motto />
     </>
   );
 }
