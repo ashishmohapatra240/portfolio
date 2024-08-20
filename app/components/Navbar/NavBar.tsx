@@ -23,10 +23,10 @@ const NavBar: React.FC = () => {
   return (
     <nav className="w-full h-16 px-8 flex justify-between items-center relative">
       <div className="flex items-center gap-6">
-        <div className="text-black text-4xl font-bold font-gilroy leading-9">
+        <div className="text-black text-4xl font-bold font-gilroy leading-8">
           am.
         </div>
-        <Button className="bg-red-600/25 text-red-600 text-lg font-normal font-ibm-plex-mono leading-9 whitespace-nowrap">
+        <Button className="bg-red-600/25 text-red-600 text-lg font-normal font-ibm-plex-mono leading-8 whitespace-nowrap">
           Alter Ego
         </Button>
       </div>
@@ -37,7 +37,7 @@ const NavBar: React.FC = () => {
               <div
                 className={`text-black text-2xl ${
                   active === item.name ? "font-bold" : "font-normal"
-                } leading-9 tracking-tightest cursor-pointer`}
+                } leading-8 tracking-tightest cursor-pointer`}
                 onClick={() => setActive(item.name)}
               >
                 {item.label}
@@ -51,14 +51,14 @@ const NavBar: React.FC = () => {
             passHref
           >
             <div
-              className={`text-black text-2xl font-bold leading-9 tracking-tightest`}
+              className={`text-black text-2xl font-bold leading-8 tracking-tightest`}
             >
               {active}
             </div>
           </Link>
           <button
             onClick={toggleMenu}
-            className="text-black text-2xl font-normal leading-9 tracking-tightest"
+            className="text-black text-2xl font-normal leading-8 tracking-tightest"
           >
             menu
           </button>

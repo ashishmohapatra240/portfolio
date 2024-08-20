@@ -22,7 +22,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ name, url }) => (
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-white text-3xl font-normal leading-9 hover:underline tracking-tightest"
+    className="text-white text-3xl font-normal leading-8 hover:underline tracking-tightest"
   >
     {name}
   </a>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-2 mt-8 md:mt-0 md:pl-24">
-            <span className="text-white text-2xl font-bold leading-9 tracking-tightest">
+            <span className="text-white text-2xl font-bold leading-8 tracking-tightest">
               Connect
             </span>
             {socialLinks.map((link) => (
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="w-full text-left mt-8 md:mt-12 text-white text-lg font-normal leading-9 tracking-tightest">
+        <div className="w-full text-left mt-8 md:mt-12 text-white text-lg font-normal leading-8 tracking-tightest">
           © Ashish Mohapatra, 2024
         </div>
       </div>
