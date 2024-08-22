@@ -173,7 +173,7 @@ const ExperienceSection: React.FC = () => {
   return (
     <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="mb-12">
-        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-8 tracking-tightest">
+        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center mb-8 tracking-tightest pt-8 pb-8">
           Experience
         </h2>
         <div className="grid grid-cols-1 gap-8">

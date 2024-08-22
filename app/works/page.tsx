@@ -4,7 +4,7 @@ import WorkCard from "./Components/WorkCard";
 const Work = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col items-center justify-center py-4 w-full max-w-screen-lg mx-4 md:mx-10">
+      <div className="flex flex-col items-center justify-center py-4 w-full max-w-screen-lg mx-4 md:mx-10 pt-24 pb-8">
         <div className="w-full max-w-5xl text-left">
           <h1 className="text-4xl md:text-5xl font-light tracking-tightest">
             my <span className="font-bold">works</span>
