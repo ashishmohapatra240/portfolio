@@ -8,28 +8,44 @@ import { ScrollProvider } from "@/context/ScrollContext";
 import { usePathname } from "next/navigation";
 import { slide, opacity, perspective } from "../anim";
 
-
 export default function ClientLayout({
-    children,
-  }: {
-    children: React.ReactNode;
-  }) {
-    const pathname = usePathname(); // Get the current path
-  
-    return (
-      <ScrollProvider>
-        <NavBar />
-        <AnimatePresence mode="wait">
-          <motion.div className="inner" key={pathname}>
-            <motion.div className="slide" initial="initial" animate="enter" exit="exit" variants={slide} />
-            <motion.div className="page" initial="initial" animate="enter" exit="exit" variants={perspective}>
-              <motion.div initial="initial" animate="enter" exit="exit" variants={opacity}>
-                {children}
-              </motion.div>
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const pathname = usePathname();
+
+  return (
+    <ScrollProvider>
+      <NavBar />
+      <AnimatePresence mode="wait">
+        <motion.div className="inner" key={pathname}>
+          <motion.div
+            className="slide"
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={slide}
+          />
+          <motion.div
+            className="page"
+            initial="initial"
+            animate="enter"
+            exit="exit"
+            variants={perspective}
+          >
+            <motion.div
+              initial="initial"
+              animate="enter"
+              exit="exit"
+              variants={opacity}
+            >
+              {children}
             </motion.div>
           </motion.div>
-        </AnimatePresence>
-        <Footer />
-      </ScrollProvider>
-    );
-  }
+        </motion.div>
+      </AnimatePresence>
+      <Footer />
+    </ScrollProvider>
+  );
+}

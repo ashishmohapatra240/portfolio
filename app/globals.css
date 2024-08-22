@@ -124,7 +124,7 @@ body {
 }
 
 .inner {
-    background-color: black;
+    background-color: white;
 }
 
 .page {
@@ -137,9 +137,8 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: white;
+    background-color: black;
     z-index: 1;
-    /* Ensure it doesn't cover the content if that's not intended */
 }
 
 .header {
