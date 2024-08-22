@@ -1,20 +1,17 @@
-import BottomHero from "./components/BottomHero/BottomHero";
+import BottomHero from "./components/HeroSection Components/BottomHero/BottomHero";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
-import HeroImage from "./components/HeroImage/HeroImage";
-import HeroText from "./components/HeroText/HeroText";
+import HeroImage from "./components/HeroSection Components/HeroImage/HeroImage";
+import HeroText from "./components/HeroSection Components/HeroText/HeroText";
 import Motto from "./components/Motto/Motto";
 import Playground from "./components/Playground/Playground";
 import Skill from "./components/Skills/Skills";
+import HeroSection from "./components/HeroSection Components/HeroSection";
 
 export default function Home() {
   return (
     <>
-      <div className="px-4 md:px-10 pt-24 pb-8">
-        <HeroText />
-      </div>
-      <HeroImage />
-      <BottomHero />
+      <HeroSection />
       <Skill />
       <Experience />
       <Playground />
