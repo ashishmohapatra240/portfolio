@@ -18,7 +18,7 @@ export default function ClientLayout({
   return (
     <ScrollProvider>
       <NavBar />
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <motion.div className="inner" key={pathname}>
           <motion.div
             className="slide"
