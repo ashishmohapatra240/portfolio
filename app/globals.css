@@ -119,5 +119,35 @@ body {
 
 
 .letter-spacing-neg-6 {
-    letter-spacing: -0.06em; /* -6% letter spacing */
-  }
+    letter-spacing: -0.06em;
+    /* -6% letter spacing */
+}
+
+.inner {
+    background-color: black;
+}
+
+.page {
+    background-color: white;
+}
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    /* Ensure it doesn't cover the content if that's not intended */
+}
+
+.header {
+    padding: 20px;
+}
+
+.header a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
