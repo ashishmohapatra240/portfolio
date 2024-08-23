@@ -1,20 +1,33 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Button from "./Button";
 import { MenuButton } from "./MenuButton";
 import { useScroll } from "@/context/ScrollContext";
+import { usePathname } from "next/navigation";
 
 const NavBar: React.FC = () => {
-  const [active, setActive] = useState<string>("home");
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const { isScrolled, hideNav } = useScroll();
+  const pathname = usePathname();
+
   const menuItems = [
     { name: "home", label: "home", path: "/" },
     { name: "works", label: "works", path: "/works" },
     { name: "hall of fame", label: "hall of fame", path: "/hall-of-fame" },
     { name: "about me", label: "about me.", path: "/about-me" },
   ];
+
+  const initialActive =
+    menuItems.find((item) => item.path === pathname)?.name || "home";
+  const [active, setActive] = useState<string>(initialActive);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const { isScrolled, hideNav } = useScroll();
+
+  useEffect(() => {
+    const currentItem = menuItems.find((item) => item.path === pathname);
+    if (currentItem) {
+      setActive(currentItem.name);
+    }
+  }, [pathname]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -53,9 +66,7 @@ const NavBar: React.FC = () => {
             href={menuItems.find((item) => item.name === active)?.path || "/"}
             passHref
           >
-            <div
-              className={`text-black text-2xl font-bold leading-8 tracking-tightest`}
-            >
+            <div className="text-black text-2xl font-bold leading-8 tracking-tightest">
               {active}
             </div>
           </Link>
