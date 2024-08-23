@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Playground = () => {
   return (
-    <div className="w-full px-4 md:px-10 flex flex-col gap-8 mt-10">
+    <div className="w-full px-4 md:px-10 flex flex-col gap-8 mt-10 bg-slate-50 py-10 md:py-16 justify-center">
       <div className="flex items-center">
         <span className="text-black text-2xl font-normal tracking-tightest">
           view my

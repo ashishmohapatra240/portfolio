@@ -24,7 +24,7 @@ const HeroText: React.FC = () => {
   return (
     <div
       ref={textRef}
-      className="w-full max-w-full md:max-w-2xl h-auto relative"
+      className="w-full max-w-full md:max-w-2xl h-auto relative px-4 md:px-10 pt-24 pb-8"
     >
       <div className="leading-tight">
         <span className="word text-black text-5xl md:text-5xl font-normal tracking-tightest mr-2">

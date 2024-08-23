@@ -4,16 +4,12 @@ import HeroText from "./HeroText/HeroText";
 
 const HeroSection = () => {
   return (
-    <>
-      <div className="px-4 md:px-10 pt-24 pb-8">
-        <HeroText />
-      </div>
+    <div className="bg-white">
+      <HeroText />
       <HeroImage />
       <BottomHero />
-    </>
+    </div>
   );
 };
 
-
 export default HeroSection;
-

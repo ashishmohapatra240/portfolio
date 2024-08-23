@@ -30,7 +30,7 @@ export const ScrollProvider = ({ children }: ScrollProviderProps) => {
     const onScroll = () => {
       const scrollTop = window.scrollY;
       setIsScrolled(scrollTop > 220);
-      setHideNav(scrollTop > 160 && scrollTop > lastScrollTop);
+      // setHideNav(scrollTop > 160 && scrollTop > lastScrollTop);
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     };
 

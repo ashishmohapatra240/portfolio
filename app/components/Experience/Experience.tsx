@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Experience = () => {
   return (
-    <div className="w-full px-4 md:px-10 flex flex-col gap-8 mt-10">
+    <div className="w-full px-4 md:px-10 flex flex-col gap-8 mt-10 bg-white min-h-screen py-16">
       <div className="flex items-center">
         <span className="text-black text-2xl font-normal tracking-tightest">
           know my
