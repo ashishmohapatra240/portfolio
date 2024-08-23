@@ -21,7 +21,7 @@ const useGsap = (sections: React.RefObject<HTMLDivElement[]>) => {
             end: () => `+=${section.offsetHeight}`,
             pin: true,
             pinSpacing: false,
-            scrub: 5, // Optional: Adjust for smoother scrubbing
+            scrub: 5,
             onEnter: () => gsap.to(section, { y: 16, duration: 0.2 }),
             onLeaveBack: () => gsap.to(section, { y: 0, duration: 0.5 }),
             onLeave: () => gsap.to(section, { y: 0, duration: 0.5 }),
@@ -35,8 +35,31 @@ const useGsap = (sections: React.RefObject<HTMLDivElement[]>) => {
       };
     });
 
+    mm.add("(max-width: 599px)", () => {
+      const triggers = sections.current?.map((section) => {
+        if (section) {
+          return ScrollTrigger.create({
+            trigger: section,
+            start: "top top",
+            end: () => `+=${section.offsetHeight}`,
+            pin: true,
+            pinSpacing: true,
+            scrub: 2,
+            onEnter: () => gsap.to(section, { y: 8, duration: 0.2 }),
+            onLeaveBack: () => gsap.to(section, { y: 0, duration: 0.5 }),
+            onLeave: () => gsap.to(section, { y: 0, duration: 0.5 }),
+          });
+        }
+        return null;
+      });
+
+      return () => {
+        triggers?.forEach((trigger) => trigger?.kill());
+      };
+    });
+
     return () => {
-      mm.revert(); // Clean up ScrollTriggers when component unmounts or breakpoints change
+      mm.revert();
     };
   }, [sections]);
 };
