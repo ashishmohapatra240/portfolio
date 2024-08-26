@@ -1,36 +1,38 @@
 export const perspective = {
     initial: {
-        scale: 1,
-        y: 0,
+        scale: 0.9,
+        y: -150,
+        opacity: 0.5,
     },
     enter: {
         scale: 1,
         y: 0,
-    },
-    exit: {
-        scale: 0.9,
-        y: -150,
-        opacity: 0.5,
+        opacity: 1,
         transition: {
             duration: 1.2,
             ease: [0.76, 0, 0.24, 1],
         },
     },
+    exit: {
+        scale: 1,
+        y: 0,
+        opacity: 1,
+    },
 };
 
 export const slide = {
     initial: {
-        y: "100vh",
+        y: 0,
     },
     enter: {
         y: "100vh",
-    },
-    exit: {
-        y: 0,
         transition: {
             duration: 1,
             ease: [0.76, 0, 0.24, 1],
         },
+    },
+    exit: {
+        y: "100vh",
     },
 };
 
